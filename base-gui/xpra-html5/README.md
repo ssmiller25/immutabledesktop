@@ -3,6 +3,12 @@
 Original from https://github.com/lanrat/docker-xpra-html5 but modified to
 not rely on winswitch
 
+## Stand-along run
+
+```sh
+docker run --rm -v /etc/localtime:/etc/localtime -v 10000:10000 xpra-html5
+```
+
 ## example docker-compose
 
 ```

@@ -1,9 +1,11 @@
-FROM ubuntu:18.04
+FROM debian:buster
 MAINTAINER Steve Miller <me@r15cookie.com>
 
 # install xpra
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y wget gnupg && \
+    wget -O - http://winswitch.org/gpg.asc | apt-key add - && \
+    echo "deb http://winswitch.org/ buster main" > /etc/apt/sources.list.d/xpra.list && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y xpra xvfb xterm && \
     apt-get clean && \ 
@@ -16,7 +18,7 @@ RUN adduser --disabled-password --gecos "User" --uid 1000 user
 
 # install all X apps here
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y firefox && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y firefox-esr && \
     apt-get clean && \ 
     rm -rf /var/lib/apt/lists/*
 
