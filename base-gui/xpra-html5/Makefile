@@ -9,3 +9,5 @@ all: build
 build:
 	docker build -t="$(DOCKER_USER)/$(TAG)" .
 
+run:
+	docker run --rm -p 10000:10000 "$(DOCKER_USER)/$(TAG)"
