@@ -1,0 +1,11 @@
+---
+- name: VI Configuration
+  copy:
+    src: "vimrc"
+    dest: "{{ ansible_env.HOME }}/.vimrc"
+    mode: "0644"
+- name: ISpell Dictionary
+  copy:
+    src: "ispell_default"
+    dest: "{{ ansible_env.HOME }}/.ispell_default"
+  

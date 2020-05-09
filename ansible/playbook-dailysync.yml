@@ -1,0 +1,5 @@
+---
+# NonPrivileged roles
+- hosts: localhost
+  roles:
+  - userenv

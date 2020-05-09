@@ -1,0 +1,5 @@
+---
+- name: Install ISpell
+  package:
+    name: ispell
+    state: present

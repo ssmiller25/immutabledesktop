@@ -1,0 +1,13 @@
+# Playbook for my rory-mac system
+#---
+# NonPrivileged roles
+#- hosts: localhost
+
+
+---
+# Privileged roles
+- hosts: localhost
+  become: yes
+  roles:
+  - base
+  
