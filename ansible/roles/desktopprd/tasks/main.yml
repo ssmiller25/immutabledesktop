@@ -3,3 +3,7 @@
   package:
     name: pinta
     state: present
+- name: Install Chromium (alt browser)
+  package:
+    name: chromium
+    state: present

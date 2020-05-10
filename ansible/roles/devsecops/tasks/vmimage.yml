@@ -1,0 +1,12 @@
+- name: Install SquashFS utilities
+  package:
+    name: 
+      - squashfs-tools
+      - squashfuse
+    state: present
+- name: Install Hashicorp image utils/prereqs
+  package:
+    name: 
+      - virtualbox
+      - vagrant
+      - packer

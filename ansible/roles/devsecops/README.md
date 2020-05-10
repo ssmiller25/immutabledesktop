@@ -1,9 +1,8 @@
 Role Name
 =========
 
-A role for my development environment.  This is a bit unique - and
-DOES NOT container kubernetes development stuff explicitly.  This
-will include and IDEs and local environments
+DevSecOps:  An ansilbe role that will lay down my "desktop" components encompassing DevSecOps utitlies
+and workflows (and anything really under the "https://www.modernsysadmin.com" umbrella).  VERY opinionated.
 
 Requirements
 ------------
@@ -13,7 +12,7 @@ None
 Role Variables
 --------------
 
-N/A
+None
 
 Dependencies
 ------------
@@ -27,7 +26,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: localhost
       roles:
-         - devenv
+         - devsecops
 
 License
 -------

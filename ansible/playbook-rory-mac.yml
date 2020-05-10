@@ -11,5 +11,4 @@
   roles:
   - base
   - desktopprd
-  - devenv
-  
+  - devsecops
