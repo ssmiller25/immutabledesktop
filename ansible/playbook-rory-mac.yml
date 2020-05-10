@@ -10,4 +10,6 @@
   become: yes
   roles:
   - base
+  - desktopprd
+  - devenv
   

@@ -1,0 +1,5 @@
+---
+- name: Install Pinta
+  package:
+    name: pinta
+    state: present

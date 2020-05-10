@@ -1,0 +1,6 @@
+---
+# tasks file for myroletemplate
+- name: Install VSCode
+  package:
+    name: code
+    state: present
