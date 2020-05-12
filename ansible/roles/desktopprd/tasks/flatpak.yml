@@ -3,3 +3,5 @@
     name: us.zoom.Zoom
     method: user
     state: present
+  become: yes
+  become_user: "{{ managed_user }}"

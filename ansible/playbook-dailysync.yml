@@ -1,5 +1,5 @@
 ---
-# NonPrivileged roles
+# Roles that run quick enough that they can be run regularly (config files main)
 - hosts: localhost
   roles:
   - userenv
