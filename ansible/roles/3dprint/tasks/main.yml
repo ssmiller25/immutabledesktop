@@ -1,0 +1,6 @@
+---
+# tasks file for myroletemplate
+- name: Install cura
+  package:
+    name: cura
+    state: present
