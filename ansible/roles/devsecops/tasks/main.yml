@@ -2,3 +2,4 @@
 # main tasks for devsecops
 - include: ide.yml
 - include: vmimage.yml
+- include: k8s.yml
