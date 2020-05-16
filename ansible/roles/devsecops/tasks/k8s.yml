@@ -1,6 +1,14 @@
-- name: kubectl
+- name: Install kubectl
   get_url:
     url: https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/linux/amd64/kubectl
     dest: /usr/local/bin/kubectl
     mode: 0755
-  
+- name: Install Docker
+  package:
+    name: docker.io
+    state: present
+- name: Install kind
+  get_url:
+    url:  https://kind.sigs.k8s.io/dl/v0.8.0/kind-Linux-amd64
+    dest: /usr/local/bin/kind
+    mode: 0755
