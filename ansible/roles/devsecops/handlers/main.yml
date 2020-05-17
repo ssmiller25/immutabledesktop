@@ -1,2 +1,8 @@
 ---
-# handlers file for myroletemplate
+# handlers file for devsecops
+- name: Restart docker
+  service:
+    name: docker
+    state: restarted
+    enabled: yes
+  when: docker_group.changed

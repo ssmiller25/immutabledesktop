@@ -18,6 +18,16 @@
     url: https://github.com/rancher/k3d/releases/download/v3.0.0-beta.1/k3d-linux-amd64
     dest: /usr/local/bin/k3d
     mode: 0755
+- name: Add {{ managed_user }} to docker group
+  user: 
+    name: "{{ managed_user }}"
+    group: "{{ managed_user }}"
+    shell: "/bin/bash"
+    groups: "docker"
+    append: yes
+  register: docker_group
+
+
 
 #  uri:
 #    # Gist with API exampels
