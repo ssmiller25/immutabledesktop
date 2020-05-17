@@ -11,4 +11,5 @@ daily:
 	ansible-playbook playbook-dailysync.yml
 
 .PHONY: check-daily
+check-daily:
 	ansible-playbook playbook-dailysync.yml --check

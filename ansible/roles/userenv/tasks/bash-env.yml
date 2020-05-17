@@ -1,0 +1,13 @@
+---
+# all configs to ensure a "nice" bash environment
+
+- name: Ensure visual set to vi
+  lineinfile:
+    path: "/home/{{ managed_user }}/.bashrc"
+    regexp: '.*VISUAL.*'
+    line: "export VISUAL=vi"
+- name: Ensure editor set to vi
+  lineinfile:
+    path: "/home/{{ managed_user }}/.bashrc"
+    regexp: '.*EDITOR.*'
+    line: "export EDITOR=vi"
