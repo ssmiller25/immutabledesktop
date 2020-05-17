@@ -1,0 +1,7 @@
+- name: Add {{ managed_user }} to dialout group for serial access
+  user: 
+    name: "{{ managed_user }}"
+    group: "{{ managed_user }}"
+    shell: "/bin/bash"
+    groups: "dialout"
+    append: yes
