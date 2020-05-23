@@ -5,7 +5,9 @@ Notes before I can script
 ## Pop!_OS 20.04
 
 * VSCode: Install and configure "Settings Sync"
-* Settings: Setup "Night Light" to lower blue light in evening
+* Settings: 
+  * Setup "Night Light" to lower blue light in evening
+  * Power: Disable automatic brightness (doesn't work well on macbook)
 * Installing the facetime camera driver
   * Instructions https://github.com/patjak/bcwc_pcie/wiki/Get-Started
   * apt-get install unrar
