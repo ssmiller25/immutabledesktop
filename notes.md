@@ -6,7 +6,7 @@ Notes before I can script
 
 * VSCode: Install and configure "Settings Sync"
 * Settings: 
-  * Setup "Night Light" to lower blue light in evening
+  * Setup "Night Light" to lower blue light in evening <https://askubuntu.com/questions/1088650/gnome-night-light-setting-from-the-command-line>
   * Power: Disable automatic brightness (doesn't work well on macbook)
 * Installing the facetime camera driver
   * Instructions https://github.com/patjak/bcwc_pcie/wiki/Get-Started

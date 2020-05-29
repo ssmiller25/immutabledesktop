@@ -1,0 +1,5 @@
+- name: Install Hugo
+  package:
+    name: 
+      - hugo
+    state: present

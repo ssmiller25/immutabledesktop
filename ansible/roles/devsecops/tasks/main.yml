@@ -4,4 +4,6 @@
 - include: vmimage.yml
 - include: k8s.yml
 - include: embedded-dev.yml
+- include: web-dev.yml
+- include: alexa-dev.yml
 - include: netutils.yml

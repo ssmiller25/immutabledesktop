@@ -1,0 +1,10 @@
+- name: Install NodeJS and NPM
+  package:
+    name: 
+      - nodejs
+      - npm
+    state: present
+- name: Install ask cli
+  npm:
+    name: ask-cli
+    global: yes

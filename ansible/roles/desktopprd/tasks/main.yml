@@ -14,3 +14,8 @@
     - rar
     - unrar
     state: present
+- name: Install barrier (shared keyboard/mouse)
+  package:
+    name:
+    - barrier
+    state: present
