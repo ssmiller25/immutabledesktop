@@ -17,3 +17,5 @@ Notes before I can script
 * Keyboard bindings 
   * Super+Shift+s: Copy selected screenshot to clipboard
   * Super+s: Save selected screenshot to file
+* Virtualbox shortcuts
+  * For Macbook, need to change Host Key to Right windows key (rigth command in Mac)
