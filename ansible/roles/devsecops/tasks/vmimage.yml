@@ -10,3 +10,16 @@
       - virtualbox
       - vagrant
       - packer
+# Instruction for ansible from https://www.omgubuntu.co.uk/2017/05/how-to-install-etcher-on-ubuntu
+- name: Add apt-key for Etcher
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 379CE192D401AB61
+- name: Add Repository for Etcher
+  apt_repository:
+    repo: deb https://deb.etcher.io stable etcher
+    state: present
+- name: Install Etcher
+  package:
+    name:
+      - balena-etcher-electron
