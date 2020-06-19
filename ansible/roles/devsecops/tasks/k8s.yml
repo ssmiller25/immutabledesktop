@@ -19,6 +19,15 @@
 #    url: https://github.com/rancher/k3d/releases/download/v3.0.0-beta.1/k3d-linux-amd64
     dest: /usr/local/bin/k3d
     mode: 0755
+- name: "Utilities to remaster k3os ISO"
+  package:
+    name:
+      - grub-efi
+      - grub-pc-bin
+      - mtools
+      - xorriso
+      - squashfs-tools
+    state: present
 - name: Install kubeseal
   get_url:
     url:  https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.12.3/kubeseal-linux-amd64
