@@ -19,3 +19,7 @@
     name:
     - barrier
     state: present
+- name: Install audacious
+  package:
+    name: audacious
+    state: present
