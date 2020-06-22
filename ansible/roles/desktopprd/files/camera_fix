@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Specific for fixing facetime camera on a Macbook Pro
+# See <https://github.com/ssmiller25/immutabledesktop> for more details
+#
+
+
+echo "Fixing Facetime Camera"
+sudo modprobe -r bdc_pci
+sudo modprobe -r facetimehd
+sudo modprobe facetimehd
+

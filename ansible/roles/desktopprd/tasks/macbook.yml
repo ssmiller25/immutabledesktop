@@ -1,0 +1,8 @@
+- name: Install camera_fix
+  copy:
+    src: camera_fix
+    dest: "{{ managed_user_home }}/bin/camera_fix"
+    mode: "0755"
+  become: yes
+  become_user: "{{ managed_user }}"
+  

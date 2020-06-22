@@ -1,3 +1,4 @@
 ---
 # defaults file for desktopprod
 managed_user: "steve"
+managed_user_home: "/home/{{ managed_user }}"

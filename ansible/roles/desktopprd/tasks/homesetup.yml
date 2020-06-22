@@ -1,0 +1,8 @@
+- name: Ensure user bin directory exists
+  file:
+    path: "{{ managed_user_home }}/bin"
+    state: directory
+    mode: '0755'
+  become: yes
+  become_user: "{{ managed_user }}"
+  

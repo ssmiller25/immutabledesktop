@@ -14,6 +14,14 @@ Notes before I can script
   * Additional sensor calibartion: https://github.com/patjak/bcwc_pcie/wiki/Extracting-the-sensor-calibration-files
     * Calibration files NEEDED
   * apt-get install linux-headers-$(uname -r) git kmod libssl-dev checkinstall
+  * After kernel update
+```sh
+cd /home/steve/git-external/patjak/bcwc_pcie
+make
+sudo make install
+sudo depmod
+```
+  * Script to load module - $HOME/bin/camera_fix
 * Keyboard bindings 
   * Super+Shift+s: Copy selected screenshot to clipboard
   * Super+s: Save selected screenshot to file

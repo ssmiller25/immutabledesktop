@@ -1,5 +1,8 @@
 ---
+- include: homesetup.yml
 - include: flatpak.yml
+- include: macbook.yml
+  when: ansible_facts['product_name'] is match("MacBookPro.*")
 - name: Install Pinta
   package:
     name: pinta
