@@ -7,3 +7,4 @@
 - include: web-dev.yml
 - include: alexa-dev.yml
 - include: netutils.yml
+- include: golang.yml

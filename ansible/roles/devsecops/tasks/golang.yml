@@ -1,0 +1,4 @@
+- name: Install Go Language
+  package:
+    name: golang-go
+    state: present
