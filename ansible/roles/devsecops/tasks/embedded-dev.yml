@@ -5,3 +5,9 @@
     shell: "/bin/bash"
     groups: "dialout"
     append: yes
+- name: Arduino IDE and utilities
+  package:
+    name: 
+    - arduino
+    - arduino-mk
+    state: present
