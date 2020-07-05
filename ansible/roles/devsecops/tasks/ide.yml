@@ -3,3 +3,7 @@
   package:
     name: code
     state: present
+- name: Install jq
+  package:
+    name: jq
+    state: present
