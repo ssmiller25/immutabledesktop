@@ -1,0 +1,12 @@
+- name: Remove dbeaver (os install)
+  package:
+    name: 
+      - dbeaver-ce
+    state: absent
+- name: Install dbeaver (flatpak)
+  flatpak:
+    name: io.dbeaver.DBeaverCommunity
+    method: user
+    state: present
+  become: yes
+  become_user: "{{ managed_user }}"

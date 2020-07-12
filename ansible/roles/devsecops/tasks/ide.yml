@@ -1,4 +1,3 @@
-
 - name: Install VSCode
   package:
     name: code

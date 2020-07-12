@@ -1,10 +1,12 @@
 ---
 # main tasks for devsecops
-- include: ide.yml
-- include: vmimage.yml
-- include: k8s.yml
-- include: embedded-dev.yml
-- include: web-dev.yml
+
 - include: alexa-dev.yml
-- include: netutils.yml
+- include: dbutil.yml
+- include: embedded-dev.yml
 - include: golang.yml
+- include: ide.yml
+- include: k8s.yml
+- include: netutils.yml
+- include: vmimage.yml
+- include: web-dev.yml
