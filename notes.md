@@ -25,5 +25,6 @@ sudo depmod
 * Keyboard bindings 
   * Super+Shift+s: Copy selected screenshot to clipboard
   * Super+s: Save selected screenshot to file
+  * Super+r: Show the run command prompt
 * Virtualbox shortcuts
-  * For Macbook, need to change Host Key to Right windows key (rigth command in Mac)
+  * For Macbook, need to change Virtualbox's Host Key to Right windows key (rigth command in Mac)
