@@ -8,5 +8,6 @@
 - include: ide.yml
 - include: k8s.yml
 - include: netutils.yml
+- include: python-dev.yml
 - include: vmimage.yml
 - include: web-dev.yml
