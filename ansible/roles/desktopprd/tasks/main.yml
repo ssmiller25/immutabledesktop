@@ -1,5 +1,6 @@
 ---
 - include: homesetup.yml
+- include: avsetup.yml
 - include: flatpak.yml
 - include: macbook.yml
   when: ansible_facts['product_name'] is match("MacBookPro.*")

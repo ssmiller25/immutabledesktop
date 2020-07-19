@@ -1,0 +1,5 @@
+- name: Install codecs
+  package:
+    name: 
+      - ffmpeg
+    state: present
