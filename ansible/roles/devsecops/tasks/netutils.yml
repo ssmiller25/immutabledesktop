@@ -2,6 +2,10 @@
   package:
     name: whois
     state: present
+- name: Install ipcalc
+  package:
+    name: ipcalc
+    state: present
 - name: Install wireshark
   package:
     name: wireshark-qt
