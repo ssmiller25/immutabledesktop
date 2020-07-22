@@ -3,3 +3,9 @@
     name: 
       - ffmpeg
     state: present
+- name: Install handbrake
+  package:
+    name: 
+      - handbrake
+      - handbrake-cli
+    state: present
