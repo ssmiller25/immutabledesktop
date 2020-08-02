@@ -21,7 +21,6 @@ make
 sudo make install
 sudo depmod
 ```
-  * Script to load module - $HOME/bin/camera_fix
 * Keyboard bindings 
   * Super+Shift+s: Copy selected screenshot to clipboard
   * Super+s: Save selected screenshot to file
