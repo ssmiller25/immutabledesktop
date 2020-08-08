@@ -2,6 +2,7 @@
 # main tasks for devsecops
 
 - include: alexa-dev.yml
+- include: civo.yml
 - include: dbutil.yml
 - include: embedded-dev.yml
 - include: golang.yml

@@ -1,0 +1,3 @@
+- name: Install the Civo CLI
+  apt:
+    deb: https://github.com/civo/cli/releases/latest/download/civo_amd64.deb

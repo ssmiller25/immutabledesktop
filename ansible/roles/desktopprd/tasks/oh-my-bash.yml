@@ -1,0 +1,13 @@
+- name: Cloning personal oh-my-bash repo
+  git:
+    repo: git@github.com:ssmiller25/oh-my-bash.git
+    dest: /home/{{ managed_user }}/.oh-my-bash
+    version: kubectl-prompt
+  become: yes
+  become_user: "{{ managed_user }}"
+- name: Installing oh-my-bash to bashrc
+  lineinfile:
+    path: /home/{{ managed_user }}/.bashrc
+    line: source $HOME/.oh-my-bash/templates/bashrc.osh-template
+  become: yes
+  become_user: "{{ managed_user }}"

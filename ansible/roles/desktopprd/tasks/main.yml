@@ -2,6 +2,7 @@
 - include: homesetup.yml
 - include: avsetup.yml
 - include: flatpak.yml
+- include: oh-my-bash.yml
 - include: macbook.yml
   when: ansible_facts['product_name'] is match("MacBookPro.*")
 - name: Install Pinta
@@ -32,6 +33,7 @@
     path: /home/{{ managed_user }}/.bashrc
     regexp: '^alias civo=.*'
     line: alias civo="docker run -it --rm -v $HOME/.civo.json:/.civo.json civo/cli:latest"
+    state: absent
   become: yes
   become_user: "{{ managed_user }}"
 
