@@ -36,4 +36,8 @@
     state: absent
   become: yes
   become_user: "{{ managed_user }}"
+- name: Quick password gen
+  package:
+    name: pwgen
+    state: present
 
