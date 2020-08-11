@@ -11,3 +11,17 @@
     - arduino
     - arduino-mk
     state: present
+- name: Sanguino board definition - directory - for Ender Upgrade
+  file:
+    # Ansible should recursively create directories
+    path: "/home/{{ managed_user }}/sketchbook/hardware"
+    state: directory
+  become: yes
+  become_user: "{{ managed_user }}"
+- name: Sanguino board definition - Git Checkout - for Ender Upgrade
+  git:
+    repo: https://github.com/Lauszus/Sanguino.git
+    dest: /home/{{ managed_user }}/sketchbook/hardware/Sanguino
+    version: master
+  become: yes
+  become_user: "{{ managed_user }}"
