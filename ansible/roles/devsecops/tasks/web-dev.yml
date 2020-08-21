@@ -1,5 +1,4 @@
-- name: Install Hugo
-  package:
-    name: 
-      - hugo
-    state: present
+- name: Install hugo 0.74.3
+  apt:
+    deb: https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
+  
