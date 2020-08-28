@@ -40,4 +40,8 @@
   package:
     name: pwgen
     state: present
+- name: Discord for chat
+  package:
+    name: discord
+    state: present
 
