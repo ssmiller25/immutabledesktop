@@ -5,6 +5,7 @@ Notes before I can script
 ## Pop!_OS 20.04
 
 * VSCode: Install and configure "Settings Sync"
+* Discord: deb package
 * Settings: 
   * Setup "Night Light" to lower blue light in evening <https://askubuntu.com/questions/1088650/gnome-night-light-setting-from-the-command-line>
   * Power: Disable automatic brightness (doesn't work well on macbook)
@@ -27,3 +28,4 @@ sudo depmod
   * Super+r: Show the run command prompt
 * Virtualbox shortcuts
   * For Macbook, need to change Virtualbox's Host Key to Right windows key (rigth command in Mac)
+
