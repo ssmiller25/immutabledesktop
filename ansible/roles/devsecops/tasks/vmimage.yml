@@ -23,3 +23,8 @@
   package:
     name:
       - balena-etcher-electron
+- name: Install virt-manager and virsh (remote libvirt management)
+  package:
+    name:
+      - virt-manager
+      - libvirt-clients
