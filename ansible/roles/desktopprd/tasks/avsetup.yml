@@ -9,3 +9,8 @@
       - handbrake
       - handbrake-cli
     state: present
+- name: Install simple audio recording, for testing new mic/headset combos
+  package:
+    name:
+      - gnome-sound-recorder
+    state: present
