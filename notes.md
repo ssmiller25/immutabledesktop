@@ -29,5 +29,3 @@ sudo depmod
   * For Macbook, need to change Virtualbox's Host Key to Right windows key (rigth command in Mac)
 * Easel Driver
   * Got raw deb from <https://easel.inventables.com/>, but need to figure out where that lives...hopefully somewhere in a repo...
-
-- yq - is in snap, but really want to move to a docker-based development environment...so someday will be part of the "docker" folder of this repo
