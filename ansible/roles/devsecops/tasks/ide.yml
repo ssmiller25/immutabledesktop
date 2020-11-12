@@ -6,3 +6,7 @@
   package:
     name: jq
     state: present
+- name: Install xclip (Markdown paste extension)
+  package:
+    name: xclip
+    state: present
