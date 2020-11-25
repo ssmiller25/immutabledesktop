@@ -29,3 +29,4 @@ sudo depmod
   * For Macbook, need to change Virtualbox's Host Key to Right windows key (rigth command in Mac)
 * Easel Driver
   * Got raw deb from <https://easel.inventables.com/>, but need to figure out where that lives...hopefully somewhere in a repo...
+* Calibre (flatpak - package in Ubuntu doens't work with Python3...)
