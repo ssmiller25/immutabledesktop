@@ -10,3 +10,7 @@
   package:
     name: wireshark-qt
     state: present
+- name: Install nmap
+  package:
+    name: nmap
+    state: present

@@ -11,16 +11,26 @@ Notes before I can script
 * Installing the facetime camera driver
   * Instructions https://github.com/patjak/bcwc_pcie/wiki/Get-Started
   * apt-get install unrar
+  * Commands:
+
+    ```sh
+    cd /home/steve/git-external/patjak/facetimehd-firmware
+    make
+    sudo make install
+    ```
+
   * Additional sensor calibartion: https://github.com/patjak/bcwc_pcie/wiki/Extracting-the-sensor-calibration-files
     * Calibration files NEEDED
   * apt-get install linux-headers-$(uname -r) git kmod libssl-dev checkinstall
   * After kernel update
-```sh
-cd /home/steve/git-external/patjak/bcwc_pcie
-make
-sudo make install
-sudo depmod
-```
+
+    ```sh
+    cd /home/steve/git-external/patjak/bcwc_pcie
+    make
+    sudo make install
+    sudo depmod
+    ```
+
 * Keyboard bindings 
   * Super+Shift+s: Copy selected screenshot to clipboard
   * Super+s: Save selected screenshot to file
