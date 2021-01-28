@@ -40,3 +40,15 @@ Notes before I can script
 * Easel Driver
   * Got raw deb from <https://easel.inventables.com/>, but need to figure out where that lives...hopefully somewhere in a repo...
 * Calibre (flatpak - package in Ubuntu doens't work with Python3...)
+
+# For both Chromebook and Linux Desktop
+
+* install "keychain", then add following to personal profile:
+```sh
+# keychain stuff
+eval `keychain --eval id_rsa $HOME/.ssh-rory/id_rsa`
+```
+
+# ForChromebook
+
+* Install ssh-askpass
