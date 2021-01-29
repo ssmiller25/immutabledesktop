@@ -51,4 +51,3 @@ eval `keychain --eval id_rsa $HOME/.ssh-rory/id_rsa`
 
 # ForChromebook
 
-* Install ssh-askpass
