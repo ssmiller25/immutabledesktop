@@ -42,3 +42,11 @@ Notes before I can script
   * Got raw deb from <https://easel.inventables.com/>, but need to figure out where that lives...hopefully somewhere in a repo...
 * Calibre (flatpak - package in Ubuntu doens't work with Python3...)
 * ppp0 Fix (might be just MY vpn).  <https://serverfault.com/questions/716509/how-to-set-permanent-mtu-size-for-ppp0> but might look for more graceful way to adjust VPN settings besides a hack to ifup to set MTU manually...
+
+# For both Chromebook and Linux Desktop
+
+* install "keychain", then add following to personal profile:
+```sh
+# keychain stuff
+eval `keychain --eval id_rsa $HOME/.ssh-rory/id_rsa`
+```
