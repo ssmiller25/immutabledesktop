@@ -1,0 +1,455 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+.Makefile.docker:29: warning: overriding recipe for target 'push'
+.Makefile.docker:25: warning: ignoring old recipe for target 'push'
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Feb 28 15:56:55 2021
+
+# Variables
+
+# environment
+GNOME_SHELL_SESSION_MODE = pop
+# environment
+OSH = /home/steve/.oh-my-bash
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-4d813247-be96-4ddc-8015-0c40222b2d30.sock
+# environment
+MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+LC_NUMERIC = en_US.UTF-8
+# makefile (from '.Makefile.docker', line 5)
+upstream_images := alpine:1.13.1
+# environment
+WINDOWPATH = 2
+# environment
+LC_ADDRESS = en_US.UTF-8
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/steve/git/immutabledesktop
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxdxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/share/pop:/home/steve/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+LANG = en_US.UTF-8
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/steve/git/immutabledesktop
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=db15a0a3-f360-493f-94b2-b2865970019a&iid=db15a0a3-f360-493f-94b2-b2865970019a&sid=db15a0a3-f360-493f-94b2-b2865970019a","uploadToServer":true}
+# environment
+XDG_SESSION_DESKTOP = pop
+# makefile (from '.Makefile.docker', line 1)
+MAKEFILE_LIST := Makefile .Makefile.docker
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 137109
+# environment
+HISTIGNORE = &:[ ]*:exit:ls:bg:fg:history:clear
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/rory-mac:@/tmp/.ICE-unix/3484,unix/rory-mac:/tmp/.ICE-unix/3484
+# automatic
+*F = $(notdir $*)
+# makefile (from '.Makefile.docker', line 6)
+build_repo := quay.io/ssmiller25
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/steve/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# makefile (from '.Makefile.docker', line 3)
+version := 0.0.1
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/steve/bin:/home/steve/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/steve/.arkade/bin/:/home/steve/.krew/bin/
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_US:en
+# environment
+LC_MONETARY = en_US.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+INVOCATION_ID = 3cac0846adcf48a08dd3129b1f94122a
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from '.Makefile.docker', line 9)
+git_hash = $(shell git rev-parse --short -q HEAD)
+# environment
+USERNAME = steve
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+GTK_IM_MODULE = ibus
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = pop
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = pop:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = steve
+# environment
+define COMP_WORDBREAKS
+ 	
+"'><=;|&(
+endef
+# makefile (from '.Makefile.docker', line 7)
+build_image := quay.io/ssmiller25/myimage
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := build
+# makefile (from '.Makefile.docker', line 4)
+release_date := 2021-02-28
+# environment
+EDITOR = vi
+# environment
+DISPLAY = :1
+# environment
+USER = steve
+# environment
+GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+DEFAULTS_PATH = /usr/share/gconf/pop.default.path
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+MANAGERPID = 2614
+ 
+# makefile (from 'Makefile', line 4)
+image_name := dotfile
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 137109
+# environment
+SSH_AGENT_PID = 3432
+# environment
+PAGER = less
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/steve/.config/Code/CachedData/622cb03f7e070a9670c94bae1a45d78d7181fbd4
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+LC_CTYPE = en_US.UTF-8
+# environment
+JOURNAL_STREAM = 8:53641
+# environment
+VISUAL = vi
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/steve
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b42ea94c-1.53.2-main.sock
+# environment
+PAPERSIZE = letter
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = pop
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# variable set hash-table stats:
+# Load=127/1024=12%, Rehash=0, Collisions=9/189=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64769, inode 6946868): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+docker: 0.0.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 29):
+	docker push ${build_image}:latest
+
+quay.io/ssmiller25/myimage: 0.0.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 29):
+	docker push ${build_image}:latest
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-02-28 15:56:00.32339299
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stop:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+push: 0.0.1
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 29):
+	docker push ${build_image}:latest
+
+# Not a target:
+0.0.1:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+in: 1.13.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 34):
+	 do \
+	  docker pull ${image} \
+	  docker tag ${image} $(build_repo)/${image} \
+    docker push ${build_repo}/${image} \
+  done
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.Makefile.docker:
+#  Implicit rule search has been done.
+#  Last modified 2021-02-28 15:56:55.785060761
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: stop
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 21):
+	docker run -d --rm -p 1948:1948 --name present $(DOCKER_REPO)/present:${git_hash} 
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 13):
+	docker build . -t ${build_image}:${git_hash} \
+		--build-arg GIT_HASH=${git_hash} \
+		--build-arg VERSION=${version} \
+		--build-arg RELEASE_DATE=${release_date} \
+		--build-arg UPSTREAM_IMAGE=${build_repo}/${upstream_image}
+
+image: 1.13.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 34):
+	 do \
+	  docker pull ${image} \
+	  docker tag ${image} $(build_repo)/${image} \
+    docker push ${build_repo}/${image} \
+  done
+
+# Not a target:
+1.13.1:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+@for: 1.13.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 34):
+	 do \
+	  docker pull ${image} \
+	  docker tag ${image} $(build_repo)/${image} \
+    docker push ${build_repo}/${image} \
+  done
+
+alpine: 1.13.1
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '.Makefile.docker', line 34):
+	 do \
+	  docker pull ${image} \
+	  docker tag ${image} $(build_repo)/${image} \
+    docker push ${build_repo}/${image} \
+  done
+
+cache-upstream:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: build run push cache-upstream
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=19/1024=2%, Rehash=0, Collisions=0/45=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+ 
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 31 / storage = 278 B / avg = 8 B
+# current buf: size = 8162 B / used = 278 B / count = 31 / avg = 8 B
+
+# strcache performance: lookups = 61 / hit rate = 49%
+# hash-table stats:
+# Load=31/8192=0%, Rehash=0, Collisions=0/61=0%
+# Finished Make data base on Sun Feb 28 15:56:55 2021
+
+ 
