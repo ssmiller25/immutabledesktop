@@ -5,6 +5,7 @@
 - include: civo.yml
 - include: dbutil.yml
 - include: embedded-dev.yml
+- include: git-secret.yml
 - include: golang.yml
 - include: ide.yml
 - include: k8s.yml

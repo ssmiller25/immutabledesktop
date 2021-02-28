@@ -1,5 +1,5 @@
 # The Immutable Desktop
 
-Concept is a series of docker containers that will prepresent a complete
-immutable desktop environment, that can be run locally or in the cloud.
-Local OS configuration will be kept in https://github.com/ssmiller25/wksetup
+A complete immutable desktop setup, based heavily on a containerized system.
+
+Previous [ansible based system is kept on the ansible-base branch](https://github.com/ssmiller25/immutabledesktop/tree/ansible-base) for historical purposes, and will eventually be removed
