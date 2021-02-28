@@ -2,11 +2,20 @@
 
 version ?= 0.0.1
 release_date ?= $(shell date +%Y-%m-%d)
-upstream_images ?= $(shell cat .upstream-images)
+upstream_image ?= "alpine:3.12"
+# If a seperate upstream build image is needed
+#upstream_build_image ?= "node:14.16.0-alpine3.12"
+image_name ?= myimage
 build_repo ?= quay.io/ssmiller25
-build_image ?= ${build_repo}/myimage
+build_image ?= ${build_repo}/${image_name}
+
 
 git_hash = $(shell git rev-parse --short -q HEAD)
+
+.PHONY: help
+help:
+# From https://stackoverflow.com/a/26339924
+	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
 
 .PHONY: build
 build:
@@ -17,8 +26,12 @@ build:
 		--build-arg UPSTREAM_IMAGE=${build_repo}/${upstream_image}
 
 .PHONY: run
-run: stop
-	@docker run -d --rm -p 1948:1948 --name present $(DOCKER_REPO)/present:${git_hash} 
+run: 
+	docker run -d --rm -p 1948:1948 --name ${image_name} $(DOCKER_REPO)/${build_image}:${git_hash} 
+
+.PHONY: stop
+stop:
+	docker stop ${image_name} || true
 
 .PHONY: push
 push:
@@ -31,8 +44,7 @@ push:
 # Pull and cache dependent images
 .PHONY: cache-upstream
 cache-upstream:
-	@for image in $(upstream_images); do \
-		docker pull $${image}; \
-		docker tag $${image} $(build_repo)/$${image}; \
-		docker push ${build_repo}/$${image}; \
-	done
+	docker pull ${upstream_image}
+	docker tag ${upstream_image} $(build_repo)/${upstream_image}; \
+	docker push ${build_repo}/${upstream_image}; \
+

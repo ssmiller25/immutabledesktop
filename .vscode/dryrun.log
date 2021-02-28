@@ -1,12 +1,9 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/steve/git/immutabledesktop'
  
-.Makefile.docker:29: warning: overriding recipe for target 'push'
-.Makefile.docker:25: warning: ignoring old recipe for target 'push'
- 
-docker build . -t quay.io/ssmiller25/myimage:b6f9135 \
-	--build-arg GIT_HASH=b6f9135 \
-	--build-arg VERSION=0.0.1 \
+docker build . -t quay.io/ssmiller25/dotfile:3a24c0b \
+	--build-arg GIT_HASH=3a24c0b \
+	--build-arg VERSION=0.1.0 \
 	--build-arg RELEASE_DATE=2021-02-28 \
 	--build-arg UPSTREAM_IMAGE=quay.io/ssmiller25/
 make: Leaving directory '/home/steve/git/immutabledesktop'

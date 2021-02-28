@@ -1,1 +1,1 @@
-{"buildTargets":["@for","alpine","build","cache-upstream","docker","image","in","push","quay.io/ssmiller25/dotfile","quay.io/ssmiller25/myimage","run"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["build","cache-upstream","push","run"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
