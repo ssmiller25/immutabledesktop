@@ -26,12 +26,12 @@ build:
 		--build-arg UPSTREAM_IMAGE=${build_repo}/${upstream_image}
 
 .PHONY: run
-run: 
-	docker run -d --rm -p 1948:1948 --name ${image_name} $(DOCKER_REPO)/${build_image}:${git_hash} 
+run: stop
+	@docker run -d --rm -p 1948:1948 --name ${image_name} ${build_image}:${git_hash}
 
 .PHONY: stop
 stop:
-	docker stop ${image_name} || true
+	@docker stop ${image_name} > /dev/null 2>&1 || true
 
 .PHONY: push
 push:
