@@ -75,7 +75,16 @@ parse_params() {
   return 0
 }
 
-install_docker_deb() {
+install_docker_gen() {
+  # Source - https://github.com/Budibase/budibase/blob/master/hosting/scripts/linux/install-docker.sh
+  local tempdir
+  tempdir=$(mktemp)
+  mkdir "${tempdir}"
+  curl -fsSL https://get.docker.com -o "${tempdir}/get-docker.sh"
+  sudo sh "${tempdir}/get-docker.sh"
+}
+
+install_docker_chomeos() {
   
   # Based on echo "Go to https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook/ to install docker on ChromeOS" 
   #  But just using for all debina/ubuntu bases
@@ -102,19 +111,23 @@ os_detect() {
   local lsb_desc
   lsb_desc=$(lsb_release -d)
     if [ -d /mnt/chromeos ]; then
-      msg "${BLUE}ChromeOS detected.${NOFORMAT} "
+      msg "${BLUE}ChromeOS detected.${NOFORMAT}"
+      os_detected="chromeos"
       os_type_detected="debian"
       deb_release=$(lsb_release -cs)
     elif echo "${lsb_desc}" | grep -qi pop; then
-      msg "${BLUE}PopOS (Ubuntu) detected.${NOFORMAT} "
+      msg "${BLUE}PopOS (Ubuntu) detected.${NOFORMAT}"
+      os_detected="popos"
       os_type_detected="debian"
       deb_release="buster"
     elif echo "${lsb_desc}" | grep -qi debian; then
-      msg "${BLUE}Debian detected.${NOFORMAT} "
+      msg "${BLUE}Debian detected.${NOFORMAT}"
+      os_detected="debian"
       os_type_detected="debian"
       deb_release=$(lsb_release -cs)
     elif echo "${lsb_desc}" | grep -qi ubuntu; then
-      msg "${BLUE}Ubuntu detected.${NOFORMAT} "
+      msg "${BLUE}Ubuntu detected.${NOFORMAT}"
+      os_detected="ubuntu"
       os_type_detected="debian"
       deb_release=$(lsb_release -cs)
     else
@@ -130,11 +143,15 @@ verify_docker() {
   elif [ "$install" == "false" ]; then 
     msg "${RED}Docker NOT detected, and install flag not passed.${NOFORMAT}"
   else
-    if [ "${os_type_detected}" == "debian" ] ; then
+    if [ "${os_detected}" == "chromeos" ]; then
       msg "${BLUE}Installing docker${NOFORMAT}"
-      install_docker_deb
+      install_docker_chomeos
+    elif [ "${os_type_detected}" == "debian" ] ; then
+      msg "${BLUE}Installing docker${NOFORMAT}"
+      install_docker_gen
     else
-      msg "${RED}No Supported Automated OS Installation for this OS!${NOFORMAT}"
+      msg "${BLUE}Installing docker - generic${NOFORMAT}"
+      install_docker_gen
     fi
   fi
 }
