@@ -14,3 +14,7 @@ echo "Minimal WSL installation setup"
 echo "Software Install"
 sudo apt install -y build-essential jq 
 
+echo "Git Configuration"
+git config --global user.name "Steve Miller"
+git config --global user.email "me@r15cookie.com"
+git config --global core.autocrlf input
