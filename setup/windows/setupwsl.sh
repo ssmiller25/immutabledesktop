@@ -16,7 +16,7 @@ sudo apt-get -y dist-upgrade
 
 echo "Minimal WSL installation setup"
 echo "Software Install"
-sudo apt install -y build-essential jq x11-apps
+sudo apt install -y build-essential jq x11-apps git-secret
 
 echo "Git Configuration"
 git config --global user.name "Steve Miller"
