@@ -17,7 +17,7 @@ This is **VERY** much alpha.
     - [Setup Linux for ChromeOS](https://chromeos.dev/en/linux/setup) 
     - Run setup/setup.sh from this repo
   - Linux
-    - - Run setup/setup.sh from this repo
+    - Run setup/setup.sh from this repo
   - Windows
     - Start powershell as Administrator
     - Run `Set-ExecutionPolicy Bypass`
