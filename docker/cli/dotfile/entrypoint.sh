@@ -70,7 +70,7 @@ parse_params() {
   flag_profile=0
   param=''
 
-  [[ "$@" -eq "0" ]] && dockerfile_install
+  [[ $# -eq 0 ]] && dockerfile_install
 
   while :; do
     case "${1-}" in
