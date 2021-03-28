@@ -9,9 +9,9 @@ RUN apk add --no-cache git
 # From Edge Testing
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing git-secret
 
-COPY entrypoint.sh .
-RUN chmod 755 entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 
 LABEL maintainer="Steve Miller <me@r15cookie.com>"
 LABEL version="${VERSION}"
