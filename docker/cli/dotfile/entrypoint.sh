@@ -19,13 +19,12 @@ EOF
 
 }
 
-profile() {
-  # Using echos here...since this is being sourced, so nothing FANCY
+print_profile() {
+  # TO be sourced directly into users startup scripts
   cat << EOF
 dfsync() {
   echo "Dot file sync process started"
 }
-
 EOF
 }
 
@@ -68,35 +67,41 @@ die() {
 parse_params() {
   # default values of variables set from params
   flag=0
+  flag_profile=0
   param=''
+
+  [[ "$@" -eq "0" ]] && dockerfile_install
 
   while :; do
     case "${1-}" in
     -h | --help) usage ;;
     -v | --verbose) set -x ;;
     --no-color) NO_COLOR=1 ;;
-    -f | --flag) flag=1 ;; # example flag
-    -p | --param) # example named parameter
-      param="${2-}"
-      shift
-      ;;
+    #-f | --flag) flag=1 ;; # example flag
+    #-p | --param) # example named parameter
+    #  param="${2-}"
+    #  shift
+    #  ;;
+    -p | --profile) flag_profile=1 ;;
     -?*) die "Unknown option: $1" ;;
     *) break ;;
     esac
     shift
   done
 
-  args=("$@")
+  #args=("$@")
 
   # check required params and arguments
   #[[ -z "${param-}" ]] && die "Missing required parameter: param"
-  [[ ${#args[@]} -eq 0 ]] && dockerfile_install
+  #[[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
 
   return 0
 }
 
 parse_params "$@"
 setup_colors
+
+[ "$flag_profile" == "1" ] && print_profile 
 
 # script logic here
 
