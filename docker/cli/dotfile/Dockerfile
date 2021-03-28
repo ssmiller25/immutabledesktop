@@ -3,9 +3,18 @@ ARG VERSION
 ARG RELEASE_DATE
 ARG UPSTREAM_IMAGE
 
-FROM quay.io/ssmiller25/alpine:3.12.4
+FROM $UPSTREAM_IMAGE
+
+RUN apk add --no-cache git
+# From Edge Testing
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing git-secret
+
+COPY entrypoint.sh .
+RUN chmod 755 entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
 
 LABEL maintainer="Steve Miller <me@r15cookie.com>"
 LABEL version="${VERSION}"
 LABEL git_hash="${GIT_HASH}"
 LABEL release-date="${RELEASE_DATE}"
+

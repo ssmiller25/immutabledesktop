@@ -1,6 +1,6 @@
 version ?= 0.1.0
 release_date ?= $(shell date +%Y-%m-%d)
-upstream_image ?= "alpine:3.12"
+upstream_image ?= "alpine:3.13.1"
 image_name ?= dotfile
 build_repo ?= quay.io/ssmiller25
 build_image ?= ${build_repo}/${image_name}
