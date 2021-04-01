@@ -1,4 +1,6 @@
 - name: Install logitech options
   win_chocolatey:
-    name: logitech-options
+    name: setpoint
+    # Older Logitech
+    #name: logitech-options
     state: latest
