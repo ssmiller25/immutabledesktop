@@ -16,7 +16,12 @@ sudo apt-get -y dist-upgrade
 
 echo "Minimal WSL installation setup"
 echo "Software Install"
-sudo apt install -y build-essential jq x11-apps git-secret
+sudo apt install -y build-essential jq x11-apps git wget
+
+# For both Debian and Ubuntu
+echo "deb https://dl.bintray.com/sobolevn/deb git-secret main" | sudo tee -a /etc/apt/sources.list
+wget -qO - https://api.bintray.com/users/sobolevn/keys/gpg/public.key | sudo apt-key add -
+sudo apt-get update && sudo apt-get install git-secret
 
 echo "Git Configuration"
 git config --global user.name "Steve Miller"
