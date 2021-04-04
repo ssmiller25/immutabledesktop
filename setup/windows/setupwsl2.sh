@@ -12,3 +12,6 @@ cleanup() {
 
 echo "Setup docker perms"
 sudo gpasswd -A steve docker
+
+echo "Setting default editor"
+update-alternatives --set editor /usr/bin/vim.basic
