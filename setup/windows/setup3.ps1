@@ -1,10 +1,10 @@
 echo "Chocolate Installs"
 
 choco install -y microsoft-windows-terminal vcxsrv docker-desktop wsl-ubuntu-2004 vscode
-echo "Setting Ubuntu 20.04 as default Linux distro"
-wsl --set-default Ubuntu-20.04
-echo "Reboot, then manually start `wsl.exe` and go through initial setup"
+echo "Manually start Ubuntu 20.04 LTS from Start Menu"
 Read-Host -Prompt "Press Enter to continue"
+echo "Setting Ubuntu 20.04 as default Linux distro" 
+wsl --set-default Ubuntu-20.04
 echo "Log into docker hub in docker-desktop"
 Read-Host -Prompt "Press Enter to continue"
 echo "Update Windows Terminal to make WSL primary shell"
