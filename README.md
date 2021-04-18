@@ -1,14 +1,17 @@
 # Blast Workstation (blast-wk)
 
-My vision for an immutable desktop "system".  [Blast](https://github.com/ssmiller25/blast).  Central premises are:
+**ALPHA!!!** - Please do not use at the moment!
 
-- Almost all workloads are container images
+Gitops for your workstation!  Central premises are:
+
+- OS Agnostic.  Goal is to be able to have a similar environment across Linux, MacOS, Chromebooks and Windows.
+- Host configuration will be as automated as possible.  
+- Almost all workloads are container images.
 - All mutable "data" is backed up regularly, and without manual intervention, to the cloud.
-- Any **base** can be used for the workstation - Linux, Mac, ChromeOS, or even Windows!
 
-## Installation
+[All work currently is in the develop branch](https://github.com/ssmiller25/immutabledesktop/tree/develop).  Once this is ready for release, will be merged in.  Existing code may change dratically
 
-This is **VERY** much alpha.  
+## Setup
 
 - Minimal install to setup.
   - ChromeOS
@@ -23,3 +26,7 @@ This is **VERY** much alpha.
     - Once Linux is up, run setupwsl.sh and setupwsl2.sh
 - Setup Rest of Local Environment (shell, dotfiles, backups).  Generally an ansible playbook run from a docker container against the local system
 - Pre-pull all needed images (should be part of shortcuts)
+
+## Blast?
+
+The [name for my micro-cluster framwork](https://github.com/ssmiller25/blast).  I envision blast workstations being over multiple machines, so it's "kind-of" a cluster...

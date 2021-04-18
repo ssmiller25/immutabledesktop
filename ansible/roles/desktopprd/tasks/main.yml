@@ -44,4 +44,8 @@
   package:
     name: discord
     state: present
+- name: tree for pretty directory tree in markdown
+  package:
+    name: tree
+    state: present
 
