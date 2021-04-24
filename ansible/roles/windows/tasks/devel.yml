@@ -1,0 +1,6 @@
+- name: Install win side developer tools
+  win_chocolatey:
+    name: 
+      - git
+      - vscode
+    state: latest
