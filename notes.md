@@ -53,3 +53,5 @@ eval `keychain --eval id_rsa $HOME/.ssh-rory/id_rsa`
 # Other stuff
 
 * In Debian based distors, make **sure** the editor is set to vim!
+* In Debian based distors, copy 05-steve.conf into /etc/sudoers - allow me to run ntpdate, mostly needed for windows
+WSL2 stuff
