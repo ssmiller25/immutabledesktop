@@ -46,10 +46,12 @@ Notes before I can script
 # For both Chromebook and Linux Desktop
 
 * install "keychain", then add following to personal profile:
+
 ```sh
 # keychain stuff
 eval `keychain --eval id_rsa $HOME/.ssh-rory/id_rsa`
 ```
+
 # Other stuff
 
 * In Debian based distors, make **sure** the editor is set to vim!
