@@ -11,7 +11,7 @@ RUN apk add --no-cache git
 # From Edge Testing
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing git-secret
 
-npm install -g @bitwarden/cli
+RUN npm install -g @bitwarden/cli
 
 
 COPY entrypoint.sh /entrypoint.sh
