@@ -3,19 +3,15 @@ ARG VERSION
 ARG RELEASE_DATE
 ARG UPSTREAM_IMAGE
 
+
+# Main Image
 FROM $UPSTREAM_IMAGE
 
 RUN apk add --no-cache git
 # From Edge Testing
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing git-secret
 
-# Not functioanl...maybe have to do build contianer around nodejs and pull down...
-#RUN wget -O bw.zip https://github.com/bitwarden/cli/releases/download/v1.15.1/bw-linux-1.15.1.zip && \
-#    unzip bw.zip && \
-#    rm bw.zip && \
-#    chmod 755 bw && \
-#    mv bw /usr/local/bin
-
+npm install -g @bitwarden/cli
 
 
 COPY entrypoint.sh /entrypoint.sh
