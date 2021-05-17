@@ -13,7 +13,7 @@ dockerfile_install() {
   cat <<EOF
 # Dotfile default installation!  To execute, run the following
 #  docker quay.io/ssmiller25/dotfile:latest >> .bashrc
-. \$(docker run --rm quay.io/ssmiller25/dotfile:latest --profile)
+. \$(docker run --user "\$(id -u):\$(id -g)" --rm quay.io/ssmiller25/dotfile:latest --profile)
 EOF
   exit
 
@@ -22,6 +22,7 @@ EOF
 print_profile() {
   # TO be sourced directly into users startup scripts
   cat << EOF
+alias dotfile="docker run --user "$(id -u):$(id -g)" --rm quay.io/ssmiller25/dotfile:latest"
 dfsync() {
   echo "Dot file sync process started"
 }
