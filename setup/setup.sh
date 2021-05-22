@@ -16,9 +16,7 @@ usage() {
   cat <<EOF
 Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-i]
 
-Setup base immutable desktop environment.  Most logic is not here, but in
-the main Makefile
-
+Setup base immutable desktop environment for *nix like environments.  
 Available options:
 
 -h, --help      Print this help and exit

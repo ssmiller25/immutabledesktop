@@ -2,14 +2,12 @@
 
 **ALPHA!!!** - Please do not use at the moment!
 
-Gitops for your workstation!  Central premises are:
+Gitops for your workstation/working environment!  Central premises are:
 
 - OS Agnostic.  Goal is to be able to have a similar environment across Linux, MacOS, Chromebooks and Windows.
-- Host configuration will be as automated as possible.  
+- Host configuration will be as automated and as **minimal** as possible.
 - Almost all workloads are container images.
 - All mutable "data" is backed up regularly, and without manual intervention, to the cloud.
-
-[All work currently is in the develop branch](https://github.com/ssmiller25/immutabledesktop/tree/develop).  Once this is ready for release, will be merged in.  Existing code may change dratically
 
 ## Setup
 
@@ -22,8 +20,9 @@ Gitops for your workstation!  Central premises are:
   - Windows
     - Start powershell as Administrator
     - Run `Set-ExecutionPolicy Bypass`
-    - Run setup/setup.ps1, setup/setup2.ps1, setup/setup3.ps1
-    - Once Linux is up, run setupwsl.sh and setupwsl2.sh
+    - Run `setup/setup.ps1`  (Install Chocolaty)
+    - Reboot 
+    - Run `setup/setup2.ps1` (Install Docker for Desktop)
 - Setup Rest of Local Environment (shell, dotfiles, backups).  Generally an ansible playbook run from a docker container against the local system
 - Pre-pull all needed images (should be part of shortcuts)
 
